@@ -1,0 +1,22 @@
+package edu.utfpr.cp.dacom.sa.soilcorrection;
+
+/**
+ *
+ * @author Beatriz 
+ */
+public class CorrecaoCalcioMagnesio{
+/*
+    Ca: Cálcio
+    K: Potássio
+    Mg: Magnésio
+ */  
+
+    public double SomaCaKMg(double K, double Ca, double Mg){
+        return(K + Ca + Mg);
+    }
+    
+    public double CalcAtualCTCCalcio (double Ca, double somaCaKMg) {
+        return Ca / (somaCaKMg * 100);
+    }
+    
+}
