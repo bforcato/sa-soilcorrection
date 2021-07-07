@@ -2,9 +2,9 @@ package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 /**
  *
- * @author Beatriz 
+ * @author Beatriz
  */
-public class CorrecaoCalcioMagnesio{
+public class CorrecaoCalcio{
 /*
     Ca: Cálcio
     K: Potássio
@@ -15,8 +15,21 @@ public class CorrecaoCalcioMagnesio{
         return(K + Ca + Mg);
     }
     
-    public double CalcAtualCTCCalcio (double Ca, double somaCaKMg) {
+    public double CTCSoloCalcioAtual (double Ca, double somaCaKMg) {
         return Ca / (somaCaKMg * 100);
     }
     
+    String CalcioIdeal(int TextSolo){
+        if ((TextSolo >= 1)||(TextSolo <= 2)){
+            if(TextSolo == 1){
+                return "45 a 55";
+            }else if(TextSolo==2){
+                return "35 a 40";
+           }
+        }else{
+            return null;
+        }
+        return null;
+    }
 }
+
