@@ -18,18 +18,5 @@ public class CorrecaoCalcio{
     public double CTCSoloCalcioAtual (double Ca, double somaCaKMg) {
         return Ca / (somaCaKMg * 100);
     }
-    
-    String CalcioIdeal(int TextSolo){
-        if ((TextSolo >= 1)||(TextSolo <= 2)){
-            if(TextSolo == 1){
-                return "45 a 55";
-            }else if(TextSolo==2){
-                return "35 a 40";
-           }
-        }else{
-            return null;
-        }
-        return null;
-    }
 }
 
