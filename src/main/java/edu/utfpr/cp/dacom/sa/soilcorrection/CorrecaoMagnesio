@@ -18,5 +18,18 @@ public class CorrecaoMagnesio{
     public double CTCMgAtual (double Mg, double somaCaKMg) {
         return Mg / (somaCaKMg * 100);
     }
-
+    
+    String IdealCTCSoloMg(int textSolo){
+    String partIdeal; 
+    
+        if(textSolo >= 1 || textSolo <= 2){
+            switch(textSolo){
+                case 1: return "10% a 15%";
+                case 2: return "8% a 12%";
+            }
+        }else{
+            return "";
+        }
+        return null;
+    }
 }
