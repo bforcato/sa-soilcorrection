@@ -18,5 +18,19 @@ public class CorrecaoCalcio{
     public double CTCSoloCalcioAtual (double Ca, double somaCaKMg) {
         return Ca / (somaCaKMg * 100);
     }
+    
+    public String IdealCTCSoloCa(int textSolo) {
+    String partIdeal;
+    
+        if(textSolo >= 1 || textSolo <= 2){
+            switch(textSolo){
+                case 1: return "45% a 55%";
+                case 2: return "35% a 40%";
+            }
+        }else{
+            return "";
+        }
+        return null;
+    }
 }
 
